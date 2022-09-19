@@ -31,6 +31,7 @@ const UploadWidget = ({
   destroy = false,
   autoClose = true,
   showAdvancedOptions = false,
+  showSkipCropButton = true
 }) => {
   // * put all new variables at the end
   const myWidgetFunction = () =>
@@ -59,7 +60,8 @@ const UploadWidget = ({
       widgetStyles,
       destroy,
       autoClose,
-      showAdvancedOptions
+      showAdvancedOptions,
+      showSkipCropButton
     )
 
   return (

@@ -26,7 +26,8 @@ const myWidget = (
   widgetStyles,
   destroy,
   autoClose,
-  showAdvancedOptions
+  showAdvancedOptions,
+  showSkipCropButton
 ) => {
   const widget =
     !!window.cloudinary &&
@@ -45,6 +46,7 @@ const myWidget = (
         uploadPreset: uploadPreset,
         folder: folder,
         cropping: cropping,
+        showSkipCropButton: showSkipCropButton,
         resourceType: resourceType,
         ...(generateSignatureUrl && { use_filename: use_filename }),
         ...(generateSignatureUrl && { eager: eager }),
