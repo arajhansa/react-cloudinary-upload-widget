@@ -29,7 +29,8 @@ const UploadWidget = ({
   multiple = false,
   buttonType = 'button',
   destroy = false,
-  autoClose = true
+  autoClose = true,
+  showAdvancedOptions = false,
 }) => {
   // * put all new variables at the end
   const myWidgetFunction = () =>
@@ -57,7 +58,8 @@ const UploadWidget = ({
       multiple,
       widgetStyles,
       destroy,
-      autoClose
+      autoClose,
+      showAdvancedOptions
     )
 
   return (

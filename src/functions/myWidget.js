@@ -25,7 +25,8 @@ const myWidget = (
   multiple,
   widgetStyles,
   destroy,
-  autoClose
+  autoClose,
+  showAdvancedOptions
 ) => {
   const widget =
     !!window.cloudinary &&
@@ -34,7 +35,7 @@ const myWidget = (
         showCompletedButton: true,
         multiple: multiple,
         singleUploadAutoClose: autoClose,
-        showAdvancedOptions: true,
+        showAdvancedOptions: showAdvancedOptions,
         showPoweredBy: false,
         styles: widgetStyles,
         googleDriveClientId: googleDriveClientId,
